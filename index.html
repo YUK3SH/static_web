@@ -3,245 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Daily Brief</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            color: #171717;
-        }
-
-        header {
-            background: #111;
-            color: white;
-            padding: 20px 7%;
-        }
-
-        .top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 26px;
-            font-weight: bold;
-        }
-
-        .date {
-            color: #aaa;
-            font-size: 14px;
-        }
-
-        nav {
-            margin-top: 20px;
-            display: flex;
-            gap: 25px;
-            border-top: 1px solid #333;
-            padding-top: 15px;
-        }
-
-        nav a {
-            color: #ccc;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        nav a:hover {
-            color: white;
-        }
-
-        .container {
-            width: 86%;
-            max-width: 1200px;
-            margin: 35px auto;
-        }
-
-        .breaking {
-            background: #b00020;
-            color: white;
-            padding: 10px 15px;
-            font-size: 14px;
-            margin-bottom: 25px;
-        }
-
-        .featured {
-            background: white;
-            padding: 30px;
-            margin-bottom: 30px;
-            border-left: 5px solid #111;
-        }
-
-        .tag {
-            font-size: 12px;
-            font-weight: bold;
-            color: #b00020;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
-
-        .featured h1 {
-            font-size: 42px;
-            line-height: 1.1;
-            max-width: 800px;
-            margin-bottom: 15px;
-        }
-
-        .featured p {
-            color: #666;
-            font-size: 17px;
-            max-width: 700px;
-            line-height: 1.5;
-        }
-
-        .section-title {
-            font-size: 22px;
-            border-bottom: 2px solid #111;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-
-        .articles {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .article {
-            background: white;
-            padding: 22px;
-            border: 1px solid #ddd;
-        }
-
-        .article h2 {
-            font-size: 21px;
-            line-height: 1.25;
-            margin: 10px 0;
-        }
-
-        .article p {
-            color: #666;
-            line-height: 1.5;
-            font-size: 14px;
-        }
-
-        .time {
-            color: #999;
-            font-size: 12px;
-            margin-top: 15px;
-        }
-
-        footer {
-            margin-top: 50px;
-            background: #111;
-            color: #888;
-            padding: 25px 7%;
-            text-align: center;
-            font-size: 13px;
-        }
-
-        @media (max-width: 800px) {
-            .articles {
-                grid-template-columns: 1fr;
-            }
-
-            .featured h1 {
-                font-size: 30px;
-            }
-
-            nav {
-                overflow-x: auto;
-            }
-        }
-    </style>
+    <title>The Daily Brief | Home</title>
+    <meta name="description" content="Professional daily news portal featuring current affairs and latest updates.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header class="site-header">
+        <div class="topbar container">
+            <div class="brand-wrap">
+                <span class="brand-mark">The</span>
+                <span class="brand-name">Daily Brief</span>
+            </div>
+            <div class="topbar-right">
+                <span class="date-pill">Tuesday, September 1, 2026</span>
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+        </div>
 
-<header>
-    <div class="top">
-        <div class="logo">THE DAILY BRIEF</div>
-        <div class="date">Tuesday, September 1, 2026</div>
-    </div>
+        <nav class="main-nav container" aria-label="Main navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="world.html">World</a>
+            <a href="politics.html">Politics</a>
+            <a href="business.html">Business</a>
+            <a href="sports.html">Sports</a>
+            <a href="technology.html">Technology</a>
+        </nav>
+    </header>
 
-    <nav>
-        <a href="#">HOME</a>
-        <a href="#">WORLD</a>
-        <a href="#">POLITICS</a>
-        <a href="#">SPORTS</a>
-        <a href="#">TECHNOLOGY</a>
-        <a href="#">BUSINESS</a>
-        <a href="#">CULTURE</a>
-    </nav>
-</header>
+    <main class="page-shell container">
+        <div class="breaking-bar">
+            <span>Breaking</span>
+            <p>Global leaders hold emergency talks as new policy and security decisions reshape the agenda.</p>
+        </div>
 
-<main class="container">
+        <section class="hero-story">
+            <div class="hero-copy">
+                <p class="eyebrow">Top Story</p>
+                <h1>Global leaders shape the next phase of economic and security talks.</h1>
+                <p class="dek">Officials are pressing ahead with new measures on trade, energy transition, and regional stability, while markets watch closely for the next major signals.</p>
+                <div class="story-meta">
+                    <span>By Editorial Desk</span>
+                    <span>6 min read</span>
+                </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80" alt="Diplomats talking in a conference room" class="hero-image">
+        </section>
 
-    <div class="breaking">
-        BREAKING NEWS &nbsp; — &nbsp; Major developments reported overnight
-    </div>
+        <section class="section-block">
+            <div class="section-header">
+                <h2>Latest Stories</h2>
+                <a href="world.html">See all</a>
+            </div>
 
-    <section class="featured">
-        <div class="tag">Top Story</div>
+            <div class="card-grid three-up">
+                <article class="news-card">
+                    <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=900&q=80" alt="Stock market trading screen">
+                    <div class="card-body">
+                        <span class="tag business">Business</span>
+                        <h3>Markets rally as policy confidence returns to major economies.</h3>
+                        <p>Investors are responding to a mix of steady inflation signals and renewed hopes for regional investment.</p>
+                        <div class="time-row"><span>45 min ago</span></div>
+                    </div>
+                </article>
 
-        <h1>
-            World leaders meet as major decisions dominate the headlines
-        </h1>
+                <article class="news-card">
+                    <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=900&q=80" alt="Football stadium and players">
+                    <div class="card-body">
+                        <span class="tag sports">Sports</span>
+                        <h3>Championship race intensifies as title contenders meet this weekend.</h3>
+                        <p>Managers say the next round of fixtures could define the race, with key squads firing up after a busy international break.</p>
+                        <div class="time-row"><span>1 hour ago</span></div>
+                    </div>
+                </article>
 
-        <p>
-            Officials gathered today for talks expected to shape the coming
-            weeks, with negotiations continuing behind closed doors.
-        </p>
-    </section>
+                <article class="news-card">
+                    <img src="https://images.unsplash.com/photo-1516321165247-4aa89a48be28?auto=format&fit=crop&w=900&q=80" alt="Artificial intelligence data visualization">
+                    <div class="card-body">
+                        <span class="tag tech">Technology</span>
+                        <h3>New AI frameworks push the next wave of digital regulation.</h3>
+                        <p>Developers and regulators are racing to align innovation with public accountability and consumer protection.</p>
+                        <div class="time-row"><span>2 hours ago</span></div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <h2 class="section-title">Latest Stories</h2>
+        <section class="feature-grid">
+            <div class="main-column">
+                <div class="section-header compact">
+                    <h2>Analysis & Opinion</h2>
+                </div>
 
-    <section class="articles">
+                <article class="analysis-item">
+                    <div>
+                        <span class="tag world">World</span>
+                        <h3>Climate financing remains central to the global recovery agenda.</h3>
+                        <p>New commitments signal an effort to balance growth and resilience, but officials say delivery will be the real test.</p>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=900&q=80" alt="Wind turbines at sunset">
+                </article>
 
-        <article class="article">
-            <div class="tag">World</div>
-            <h2>Global markets react to overnight developments</h2>
-            <p>
-                Investors respond as markets open following a closely
-                watched series of announcements.
-            </p>
-            <div class="time">24 minutes ago</div>
-        </article>
+                <article class="analysis-item">
+                    <div>
+                        <span class="tag politics">Politics</span>
+                        <h3>Coalition talks continue as regional governments seek stability.</h3>
+                        <p>Negotiations are centered on public spending priorities and a broad outline for the coming parliamentary session.</p>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=900&q=80" alt="Political leaders meeting during a parliamentary session">
+                </article>
+            </div>
 
-        <article class="article">
-            <div class="tag">Sports</div>
-            <h2>Championship race heats up ahead of crucial fixture</h2>
-            <p>
-                Teams prepare for a decisive match with everything still
-                to play for.
-            </p>
-            <div class="time">41 minutes ago</div>
-        </article>
+            <aside class="sidebar">
+                <div class="section-header compact">
+                    <h2>Most Read</h2>
+                </div>
+                <ul class="read-list">
+                    <li><span>01</span><a href="business.html">Why global investors are watching infrastructure spending closely</a></li>
+                    <li><span>02</span><a href="technology.html">AI safety tools gain traction amid growing policy pressure</a></li>
+                    <li><span>03</span><a href="sports.html">The matchweek that could reshape the title race</a></li>
+                    <li><span>04</span><a href="politics.html">Regional elections highlight a new pressure on public services</a></li>
+                </ul>
+            </aside>
+        </section>
+    </main>
 
-        <article class="article">
-            <div class="tag">Technology</div>
-            <h2>New developments could reshape the industry</h2>
-            <p>
-                Companies announce their latest plans as competition
-                continues to grow.
-            </p>
-            <div class="time">1 hour ago</div>
-        </article>
-
-    </section>
-
-</main>
-
-<footer>
-    © 2026 The Daily Brief · News, views and stories from around the world
-</footer>
-
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2026 The Daily Brief</p>
+            <p>News, views, and perspectives from around the world.</p>
+        </div>
+    </footer>
 </body>
 </html>
