@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Brief</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #171717;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 20px 7%;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .date {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        nav {
+            margin-top: 20px;
+            display: flex;
+            gap: 25px;
+            border-top: 1px solid #333;
+            padding-top: 15px;
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .container {
+            width: 86%;
+            max-width: 1200px;
+            margin: 35px auto;
+        }
+
+        .breaking {
+            background: #b00020;
+            color: white;
+            padding: 10px 15px;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .featured {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-left: 5px solid #111;
+        }
+
+        .tag {
+            font-size: 12px;
+            font-weight: bold;
+            color: #b00020;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .featured h1 {
+            font-size: 42px;
+            line-height: 1.1;
+            max-width: 800px;
+            margin-bottom: 15px;
+        }
+
+        .featured p {
+            color: #666;
+            font-size: 17px;
+            max-width: 700px;
+            line-height: 1.5;
+        }
+
+        .section-title {
+            font-size: 22px;
+            border-bottom: 2px solid #111;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .article {
+            background: white;
+            padding: 22px;
+            border: 1px solid #ddd;
+        }
+
+        .article h2 {
+            font-size: 21px;
+            line-height: 1.25;
+            margin: 10px 0;
+        }
+
+        .article p {
+            color: #666;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .time {
+            color: #999;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+
+        footer {
+            margin-top: 50px;
+            background: #111;
+            color: #888;
+            padding: 25px 7%;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        @media (max-width: 800px) {
+            .articles {
+                grid-template-columns: 1fr;
+            }
+
+            .featured h1 {
+                font-size: 30px;
+            }
+
+            nav {
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="top">
+        <div class="logo">THE DAILY BRIEF</div>
+        <div class="date">Tuesday, September 1, 2026</div>
+    </div>
+
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">WORLD</a>
+        <a href="#">POLITICS</a>
+        <a href="#">SPORTS</a>
+        <a href="#">TECHNOLOGY</a>
+        <a href="#">BUSINESS</a>
+        <a href="#">CULTURE</a>
+    </nav>
+</header>
+
+<main class="container">
+
+    <div class="breaking">
+        BREAKING NEWS &nbsp; — &nbsp; Major developments reported overnight
+    </div>
+
+    <section class="featured">
+        <div class="tag">Top Story</div>
+
+        <h1>
+            World leaders meet as major decisions dominate the headlines
+        </h1>
+
+        <p>
+            Officials gathered today for talks expected to shape the coming
+            weeks, with negotiations continuing behind closed doors.
+        </p>
+    </section>
+
+    <h2 class="section-title">Latest Stories</h2>
+
+    <section class="articles">
+
+        <article class="article">
+            <div class="tag">World</div>
+            <h2>Global markets react to overnight developments</h2>
+            <p>
+                Investors respond as markets open following a closely
+                watched series of announcements.
+            </p>
+            <div class="time">24 minutes ago</div>
+        </article>
+
+        <article class="article">
+            <div class="tag">Sports</div>
+            <h2>Championship race heats up ahead of crucial fixture</h2>
+            <p>
+                Teams prepare for a decisive match with everything still
+                to play for.
+            </p>
+            <div class="time">41 minutes ago</div>
+        </article>
+
+        <article class="article">
+            <div class="tag">Technology</div>
+            <h2>New developments could reshape the industry</h2>
+            <p>
+                Companies announce their latest plans as competition
+                continues to grow.
+            </p>
+            <div class="time">1 hour ago</div>
+        </article>
+
+    </section>
+
+</main>
+
+<footer>
+    © 2026 The Daily Brief · News, views and stories from around the world
+</footer>
+
+</body>
+</html>
